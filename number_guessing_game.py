@@ -7,7 +7,6 @@ ans = digits[:3]
 
 while True:
     guess = input("Enter you number: ")
-    
     guess_ans = []
     for val in guess:
         guess_ans.append(int(val))
@@ -19,10 +18,9 @@ while True:
     for val in guess_ans:
         if val == ans[guess_ans.index(val)]:
             match_ans = True
-            cnt+=1
+            cnt += 1
         elif val in ans:
             close_ans = True
-    
     if cnt == 3:
         break
     if not close_ans and not match_ans:
@@ -30,12 +28,9 @@ while True:
 
     if match_ans:
         print("There is a match in the answer")
-
     if close_ans:
         print("It is close to the answer")
-
     if nope_ans:
         print("It is nowhere near the answer lol")
 
 print("Congratz")
-    
