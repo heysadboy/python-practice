@@ -5,8 +5,6 @@ random.shuffle(digits)
 
 ans = digits[:3]
 
-print(ans)
-
 while True:
     guess = input("Enter you number: ")
     
